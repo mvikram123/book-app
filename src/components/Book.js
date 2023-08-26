@@ -6,7 +6,7 @@ const Book = ({ book }) => {
   return (
     <div className="book-details">
       <h2>{title}</h2>
-      <p>Authors: {authors.join(', ')}</p>
+      <p>Authors: {authors ? authors.join(', ') : 'Unknown'}</p>
       <p>{description}</p>
       <a href={previewLink} target="_blank" rel="noopener noreferrer">
         <button>Read Now</button>
